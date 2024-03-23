@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Program to check whether the given input is a number, uppercase letter, or lowercase letter:
+//javascript
+
+var input = prompt("Enter a character:");
+
+if (!isNaN(input)) {
+    alert(input + " is a number.");
+} else if (input === input.toUpperCase()) {
+    alert(input + " is an uppercase letter.");
+} else if (input === input.toLowerCase()) {
+    alert(input + " is a lowercase letter.");
+} else {
+    alert("Invalid input.");
+}
+//Program to accept two integers and display the larger, along with checking if they are equal:
+//javascript
+
+var num1 = parseInt(prompt("Enter first integer:"));
+var num2 = parseInt(prompt("Enter second integer:"));
+
+if (num1 > num2) {
+    alert(num1 + " is larger.");
+} else if (num2 > num1) {
+    alert(num2 + " is larger.");
+} else {
+    alert("Both integers are equal.");
+}
+//Program to take input a number from the user and state whether the number is positive, negative, or zero:
+//javascript
+
+var number = parseFloat(prompt("Enter a number:"));
+
+if (number > 0) {
+    alert("The number is positive.");
+} else if (number < 0) {
+    alert("The number is negative.");
+} else {
+    alert("The number is zero.");
+}
+//Program to take a character (string of length 1) and return true if it is a vowel, false otherwise:
+//javascript
+
+var character = prompt("Enter a character:");
+
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+if (vowels.includes(character.toLowerCase())) {
+    alert(character + " is a vowel.");
+} else {
+    alert(character + " is not a vowel.");
+}
+//Program to store correct password in a JS variable, ask the user to enter his/her password, and validate the passwords:
+//javascript
+
+var correctPassword = "password123";
+var userInput = prompt("Enter your password:");
+
+if (userInput === "") {
+    alert("Please enter your password.");
+} else if (userInput === correctPassword) {
+    alert("Correct! The password you entered matches the original password.");
+} else {
+    alert("Incorrect password.");
+}
+//Fix the if/else statement:
+
+
+var greeting;
+var hour = 13;
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+//Program to take time as input from the user and implement the given case using if, else, and else if statements:
+
+
+var time = parseInt(prompt("Enter the time in 24-hour format (e.g., 1900 for 7pm):"));
+
+if (time >= 0 && time < 1200) {
+    alert("Good morning!");
+} else if (time >= 1200 && time < 1700) {
+    alert("Good afternoon!");
+} else if (time >= 1700 && time < 2100) {
+    alert("Good evening!");
+} else if (time >= 2100 && time <= 2359) {
+    alert("Good night!");
+} else {
+    alert("Invalid time input!");
+}
+    </script>
+</body>
+</html>
